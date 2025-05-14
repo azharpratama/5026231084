@@ -1,0 +1,47 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-panel {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-panel {
+    background-color: #0c2746;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+}
+
+.login-box input {
+    margin-bottom: 15px;
+}
+
+.form-control::placeholder {
+    color: #ccc !important;
+}
+
+.logo-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.brand-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0c2746;
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+    font-family: 'Roboto';
+}
+
+a:link {
+    text-decoration: none;
+    color: navy;
+}
+
+a:visited {
+    text-decoration: none;
+    color: navy;
+}
+
+a:hover {
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+ .quote {
+    color: crimson;
+ }
