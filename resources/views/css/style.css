@@ -1,0 +1,100 @@
+/* Table Borders */
+table,
+th,
+td {
+    border: solid;
+}
+
+/* Full-Width Table */
+table {
+    width: 100%;
+}
+
+/* Collapse Table Borders */
+table {
+    border-collapse: collapse;
+}
+
+/* Table Width and Height */
+table {
+    width: 80%;
+}
+
+th,
+td {
+    height: 50px;
+}
+
+/* Table Horizontal Alignment */
+th,
+td {
+    text-align: right;
+}
+
+/* Table Vertical Alignment */
+td {
+    vertical-align: bottom;
+}
+
+/* Table Padding */
+th,
+td {
+    padding: 10px;
+}
+
+/* Table Horizontal Dividers */
+table,
+th,
+td {
+    border: none;
+}
+
+th,
+td {
+    border-bottom: 1px solid gray;
+}
+
+/* Hoverable Table */
+tr:hover {
+    background-color: azure;
+}
+
+/* Striped Tables */
+tr:nth-child(even) {
+    background-color: lightyellow;
+}
+
+/* Table Color */
+th {
+    background-color: lightseagreen;
+    color: white;
+}
+
+/* Create Mulple Columns */
+.text {
+    column-count: 2;
+}
+
+/* Specify Gap Between Columns */
+.text {
+    column-gap: 42px;
+}
+
+/* Column Rules */
+.text {
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightgreen;
+    column-rule: 1px solid lightgreen;
+}
+
+/* Column Span */
+#column {
+    column-span: all;
+}
+
+/* Column Width */
+.text {
+    column-count: auto;
+    column-width: 200px;
+}
