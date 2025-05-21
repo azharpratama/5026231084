@@ -13,43 +13,44 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function () {
+    return view("welcome");
 });
 
-Route::get('frontend', function () {
-    return view('frontend');
+// Routes for the Web Development Portfolio
+
+Route::get("frontend", function () {
+    return view("frontend.index");
 });
 
-// Routes for the portfolio sections
-Route::get('html', function () {
-    return view('html.index');
+Route::get("html", function () {
+    return view("frontend.html.index");
 });
 
-Route::get('css', function () {
-    return view('css.index');
+Route::get("css", function () {
+    return view("frontend.css.index");
 });
 
-Route::get('bootstrap', function () {
-    return view('bootstrap.index');
+Route::get("bootstrap", function () {
+    return view("frontend.bootstrap.index");
 });
 
-Route::get('javascript', function () {
-    return view('javascript.js1');
+Route::get("javascript", function () {
+    return view("frontend.javascript.js1");
 });
 
-Route::get('javascript/js2', function () {
-    return view('javascript.js2');
+Route::get("javascript/js2", function () {
+    return view("frontend.javascript.js2");
 });
 
-Route::get('linktree', function () {
-    return view('linktree.index');
+Route::get("linktree", function () {
+    return view("frontend.linktree.index");
 });
 
-Route::get('danantara', function () {
-    return view('danantara.index');
+Route::get("danantara", function () {
+    return view("frontend.danantara.index");
 });
 
-Route::get('ets', function () {
-    return view('ets.index');
+Route::get("ets", function () {
+    return view("frontend.ets.index");
 });
