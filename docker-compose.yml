@@ -1,0 +1,13 @@
+services:
+    mysql:
+        hostname: ${DB_HOST}
+        image: ${DB_CONNECTION}:latest
+        ports:
+            - ${DB_PORT}:3306
+        restart: unless-stopped
+        volumes:
+            - ./volumes/mysql:/var/lib/${DB_CONNECTION}
+        environment:
+            - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+            - MYSQL_DATABASE=${DB_DATABASE}
+            - MYSQL_PASSWORD=${DB_PASSWORD}
