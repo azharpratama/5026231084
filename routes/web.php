@@ -5,6 +5,7 @@ use App\Http\Controllers\Link;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiControllerNew;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\KueController;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,3 +87,12 @@ Route::get("danantara", function () {
 Route::get("ets", function () {
     return view("frontend.ets.index");
 });
+
+// Week 14 assignment
+Route::get('/kue', [KueController::class, 'index']);
+Route::get('/kue/tambah', [KueController::class, 'tambah']);
+Route::post('/kue/store', [KueController::class, 'store']);
+Route::get('/kue/edit/{id}', [KueController::class, 'edit']);
+Route::post('/kue/update', [KueController::class, 'update']);
+Route::get('/kue/hapus/{id}', [KueController::class, 'hapus']);
+Route::get('/kue/cari', [KueController::class, 'cari']);
