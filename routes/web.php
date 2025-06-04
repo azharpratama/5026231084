@@ -25,9 +25,14 @@ Route::get("hello", [Link::class,"hello"]);
 
 Route::get("dosen", [Link::class,"index"]);
 
-Route::get("/pegawai/{nama}", [PegawaiController::class, "index"]);
-
+// route pegawai
+// Route::get("/pegawai/{nama}", [PegawaiController::class, "index"]);
 Route::get("/pegawai/", [PegawaiControllerNew::class, "index"]);
+Route::get("/pegawai/tambah", [PegawaiControllerNew::class, "tambah"]);
+Route::post('/pegawai/store', [PegawaiControllerNew::class, 'store']);
+Route::get('/pegawai/edit/{id}', [PegawaiControllerNew::class, 'edit']);
+Route::post('/pegawai/update', [PegawaiControllerNew::class, 'update']);
+Route::get('/pegawai/hapus/{id}', [PegawaiControllerNew::class, 'hapus']);
 
 Route::get("/formulir", [PegawaiController::class, "formulir"]);
 
