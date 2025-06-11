@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiControllerNew;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\KueController;
+use App\Http\Controllers\KaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -96,3 +97,9 @@ Route::get('/kue/edit/{id}', [KueController::class, 'edit']);
 Route::post('/kue/update', [KueController::class, 'update']);
 Route::get('/kue/hapus/{id}', [KueController::class, 'hapus']);
 Route::get('/kue/cari', [KueController::class, 'cari']);
+
+// Week 15 EAS exercise Laki-laki NRP Genap
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+Route::get('/karyawan/hapus/{id}', [KaryawanController::class, 'hapus']);
